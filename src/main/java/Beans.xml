@@ -7,8 +7,8 @@
     <bean id="Deisel" class="in.ashokit.beans.DieselEngine"/>
     <bean id="Petrol" class="in.ashokit.beans.PetrolEngine"/>
     <bean id="eng" class="in.ashokit.beans.Car">
-    <!--<constructor-arg ref="Petrol"/>  -->
-    <property name="eng" ref="Deisel"/>
+    <!--<constructor-arg ref="Petrol"/> constructor injection -->
+    <property name="eng" ref="Deisel"/>    <!--setter injection-->
     </bean>
 
 </beans>
